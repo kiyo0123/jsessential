@@ -1,7 +1,8 @@
 import axios from 'axios'
 
 const city = 'tokyo';
-const apiKey = 'c4f86ece00bc8aa272652ac9065af12d'; // Replace 'YOUR_API_KEY' with your actual API key
+const apiKey = '05fd2bd1087e0af932ca35967e1b619f'; // Replace 'YOUR_API_KEY' with your actual API key
+//const apiKey = 'c4f86ece00bc8aa272652ac9065af12d'; // Replace 'YOUR_API_KEY' with your actual API key
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 fetch(apiUrl)
