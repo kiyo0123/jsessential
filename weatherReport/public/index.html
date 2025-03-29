@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather Report</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    .weather-info {
+      margin-top: 20px;
+    }
+    .weather-info p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Weather Report</h1>
+  <label for="cityInput">Enter City: </label>
+  <input type="text" id="cityInput" placeholder="e.g. Tokyo" />
+  <button id="getWeatherBtn">Get Weather</button>
+
+  <div class="weather-info" id="weatherInfo" style="display: none;">
+    <h2 id="weatherCity"></h2>
+    <p id="weatherTemp"></p>
+    <p id="weatherCondition"></p>
+  </div>
+
+  <!-- 別ファイル（script.js）を読み込む -->
+  <script src="weather_report.js"></script>
+</body>
+</html>
+
